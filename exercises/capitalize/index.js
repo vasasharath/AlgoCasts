@@ -17,6 +17,7 @@
 
 function capitalize(str) {
 	let result = str[0].toUpperCase();
+    //for each charecter check previous letter is space if so change it to uppercase
 	for (let i = 1; i < str.length; i++) {
 		if (str[i - 1] === ' ') {
 			result += str[i].toUpperCase();
