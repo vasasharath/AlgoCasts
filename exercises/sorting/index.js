@@ -44,6 +44,7 @@ function mergeSort(arr) {
 }
 
 function merge(left, right) {
+  //results array to store the sorted numbers
   const results = [];
 
   while (left.length && right.length) {
