@@ -54,7 +54,7 @@ function merge(left, right) {
       results.push(right.shift());
     }
   }
-
+  //if any element left in the left or right array append it to the result array and return it
   return [...results, ...left, ...right];
 }
 
