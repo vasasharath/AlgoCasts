@@ -9,6 +9,7 @@ function findMissingNum(arr) {
 }*/
 
 function findMissingNum(arr) {
+    //find the maximum element of the array
 	const max = Math.max(...arr);
 	let r1 = arr[0],
 	r2 = 1;
