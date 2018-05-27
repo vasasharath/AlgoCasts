@@ -13,6 +13,7 @@ function findMissingNum(arr) {
 	const max = Math.max(...arr);
 	let r1 = arr[0],
 	r2 = 1;
+    //for each element of the array perform XOR operation with the next element
 	for (let i = 1; i < arr.length; i++) {
 		r1 = r1 ^ arr[i];
 	}
