@@ -17,6 +17,7 @@ function findMissingNum(arr) {
 	for (let i = 1; i < arr.length; i++) {
 		r1 = r1 ^ arr[i];
 	}
+    //from 1 to max number perform XOR on each element with the next element
 	for (i = 2; i <= max; i++) {
 		r2 = r2 ^ i;
 	}
