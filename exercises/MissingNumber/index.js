@@ -21,5 +21,6 @@ function findMissingNum(arr) {
 	for (i = 2; i <= max; i++) {
 		r2 = r2 ^ i;
 	}
+    //Finally XOR between these two numbers will give the missing number
 	return (r1 ^ r2);
 }
