@@ -5,6 +5,7 @@ Write an efficient code to find the missing integer.*?
 function findMissingNum(arr) {
     //find the maximum of the array
 	const max = Math.max(...arr);
+    //find the sum of array elements
 	const sum = arr.reduce((a, b) => a + b);
 	return (max * (max + 1) / 2) - sum;
 }*/
