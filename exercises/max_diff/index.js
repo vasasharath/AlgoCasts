@@ -10,6 +10,7 @@ function maxdiff(arr) {
 	// Minimum number visited so far
 	let min_element = arr[0];
 	for (let i = 1; i < arr.length; i++) {
+        //at each step check if the new diff is greater than the previous
 		if (arr[i] - min_element > max_diff)
 			max_diff = arr[i] - min_element;
 
