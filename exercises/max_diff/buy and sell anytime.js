@@ -6,6 +6,7 @@ However, you may not engage in multiple transactions at the same time
 var maxProfit = function (prices) {
 	let max = 0;
 	for (let i = 1; i < prices.length; i++) {
+        //calculate the profit at each iteration
 		let temp = prices[i] - prices[i - 1];
 		if (temp > 0) {
 			max += temp;
