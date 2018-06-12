@@ -8,6 +8,7 @@ var maxProfit = function (prices) {
 	for (let i = 1; i < prices.length; i++) {
         //calculate the profit at each iteration
 		let temp = prices[i] - prices[i - 1];
+        //if the profit is positive add it to the max
 		if (temp > 0) {
 			max += temp;
 		}
