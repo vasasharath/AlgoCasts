@@ -13,5 +13,6 @@ var maxProfit = function (prices) {
 			max += temp;
 		}
 	}
+    //return the max profit
 	return max;
 };
