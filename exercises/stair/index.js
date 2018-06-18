@@ -38,6 +38,7 @@ let k;
     }
 
     if ((n & 1)) {
+        //formula to calculate nth fib number
         f[n] = (fib(k) * fib(k) + fib(k-1) * fib(k-1))
     } else {
         f[n] = (2*fib(k-1) + fib(k))*fib(k)
