@@ -18,7 +18,7 @@ var searchRange = function(nums, target) {
       
         if(high >= low)
         {
-            
+            //find the mid element at every iteration
             let mid = Math.floor(low + (high - low)/2);
             if( ( mid == 0 || x > nums[mid-1]) && nums[mid] == x)
                 return mid;
