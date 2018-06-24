@@ -23,6 +23,7 @@ var searchRange = function(nums, target) {
             //if the mid element is the target element and there are no elements with the same value to the left then return mid
             if( ( mid == 0 || x > nums[mid-1]) && nums[mid] == x)
                 return mid;
+            //if the target is greater than the mid make a recursive call to search from the element next to the mid
              else if(x > nums[mid])
                 return first(nums, (mid + 1), high, x, n);
             else
