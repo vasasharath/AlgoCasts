@@ -29,6 +29,7 @@ const deletionDistance = function(a, b){
     for(j = 1; j <= a.length; j++){
       //compare the last character from two strings  
       if(b.charAt(i-1) == a.charAt(j-1)){
+          //if they are equal move to the next chaacter from the last character
         matrix[i][j] = matrix[i-1][j-1];
       } else {
         matrix[i][j] = Math.min(matrix[i-1][j] + 1, matrix[i][j-1] + 1); // deletion
