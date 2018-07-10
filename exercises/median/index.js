@@ -21,6 +21,7 @@ var findMedianSortedArrays = function(nums1, nums2) {
     //iterate through both the arrays
     while(i < nums1.length || j < nums2.length){
         var curr = 0;
+        //if the second array is empty assign curr to the first array element
         if(nums2[j] === undefined || nums1[i] <= nums2[j]){
             curr = nums1[i];
         }else if(nums1[i] === undefined || nums1[i] > nums2[j]){
