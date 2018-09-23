@@ -16,19 +16,10 @@ The result can be in any order.
 */
 var intersection = function(nums1, nums2) {
     let res = [];
-    if(nums1.length >= nums2.length){
         for(let a of nums1){
             if(nums2.indexOf(a) > -1 && res.indexOf(a) === -1){
                 res.push(a);
             }
         }
-    }
-    else{
-        for(let a of nums2){
-            if(nums1.indexOf(a) > -1 && res.indexOf(a) === -1){
-                res.push(a);
-            }
-        }
-    }
     return res;
 };
