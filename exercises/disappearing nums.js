@@ -13,13 +13,14 @@ Input:
 Output:
 [5,6]
 */
-var findDisappearedNumbers = function(nums) {
-    var result = [];
-    for (let i = 0; i < nums.length; i++) {
-      nums[(nums[i] - 1) % nums.length] += nums.length;
-    }
-    for (i = 0; i < nums.length; i++) {
-      if (nums[i] <= nums.length)  result.push(i+1);
-    }
-    return result;
+var findDisappearedNumbers = function (nums) {
+	var result = [];
+	for (let i = 0; i < nums.length; i++) {
+		nums[(nums[i] - 1) % nums.length] += nums.length;
+	}
+	for (i = 0; i < nums.length; i++) {
+		if (nums[i] <= nums.length)
+			result.push(i + 1);
+	}
+	return result;
 };
