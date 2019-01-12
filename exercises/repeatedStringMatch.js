@@ -12,6 +12,7 @@ The length of A and B will be between 1 and 10000.
 var repeatedStringMatch = function(A, B) {
      let i = 0;
     let str = '';
+    //iterate through the string
     while (str.length <= B.length) {
          str = A.repeat(++i);
         if (str.indexOf(B) !== -1){
