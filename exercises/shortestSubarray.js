@@ -25,7 +25,7 @@ Note:
 -10 ^ 5 <= A[i] <= 10 ^ 5
 1 <= K <= 10 ^ 9
 */
-/**
+/*
  * @param {number[]} A
  * @param {number} K
  * @return {number}
